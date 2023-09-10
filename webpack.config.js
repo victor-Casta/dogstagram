@@ -1,11 +1,11 @@
 const path = require('path');
-const HtmlWebpackpPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 
 module.exports = {
-    entry : './src/index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'boundle.js'
+        filename: 'bundle.js'
     },
     resolve: {
         extensions: ['*', '.mjs', '.js', '.svelte']
@@ -29,7 +29,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackpPlugin({
+        new HtmlWebpackPlugin({
             inject: true,
             template: './public/index.html',
             filename: './index.html'

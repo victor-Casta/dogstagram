@@ -4,7 +4,8 @@
   "description": "🐶 Explore the world of doggos with our Svelte-powered Instagram for dogs! Share 📸, connect with fellow dog lovers, and enjoy tail-wagging features. 🐾",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
   },
   "author": "@victorcasta.dev",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "html-webpack-plugin": "^5.5.3",
     "svelte-loader": "^3.1.9",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
